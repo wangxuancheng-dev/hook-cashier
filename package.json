@@ -1,0 +1,36 @@
+{
+  "name": "hook-cashier-wiithout-router",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:dev": "vite build --mode=development",
+    "build:test": "vite build --mode=test",
+    "build:prod": "vite build --mode=production",
+    "build:analyze": "set ANALYZE=true&& vite build --mode=production",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "dom-to-image-more": "^3.5.0",
+    "hook-cashier-wiithout-router": "file:",
+    "pinia": "^3.0.1",
+    "qrcode": "^1.5.4",
+    "qrcode.vue": "^3.6.0",
+    "qrto": "^0.0.3",
+    "vue": "^3.4.29",
+    "vue-clipboard3": "^2.0.0",
+    "vue-i18n": "^12.0.0-alpha.2",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.5",
+    "axios": "^1.7.2",
+    "laravel-echo": "^1.16.1",
+    "pusher-js": "^8.4.0-rc2",
+    "rollup-plugin-visualizer": "^5.12.0",
+    "terser": "^5.44.1",
+    "vite": "^5.3.1"
+  }
+}
