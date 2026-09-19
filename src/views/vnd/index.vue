@@ -292,9 +292,11 @@ watch([expire, success], ([newExpire, newSuccess]) => {
 
 }
 
+const normalizeBankAssetName = (bankName) => String(bankName || '').replace(/\s+/g, '')
+
 const getBankImage = (bankName) => {
   try {
-    return new URL(`../../assets/bank/${bankName}.png`, import.meta.url).href
+    return new URL(`../../assets/bank/${normalizeBankAssetName(bankName)}.png`, import.meta.url).href
   } catch (e) {
     return new URL(`../../assets/bank/Default.png`, import.meta.url).href
   }
@@ -302,7 +304,7 @@ const getBankImage = (bankName) => {
 
 const getBankImage2 = (bankName) => {
   try {
-    return new URL(`../../assets/bank/${bankName}2.png`, import.meta.url).href
+    return new URL(`../../assets/bank/${normalizeBankAssetName(bankName)}2.png`, import.meta.url).href
   } catch (e) {
     return new URL(`../../assets/bank/Default.png`, import.meta.url).href
   }
