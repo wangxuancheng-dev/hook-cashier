@@ -1,0 +1,4 @@
+# Build output must be dist (Vite). If deploy still fails, also set
+# Cloudflare Pages → Settings → Builds → Build output directory = dist
+compatibility_date = "2024-09-19"
+pages_build_output_dir = "./dist"
