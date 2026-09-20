@@ -1,0 +1,31 @@
+/* Reset & Base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+  .payment-container {
+    padding: 15px !important;
+  }
+  
+  .amount .value {
+    font-size: 28px !important;
+  }
+  
+  .qr-container img {
+    max-width: 180px !important;
+  }
+  
+  .payment-methods .method-icon {
+    width: 35px !important;
+    height: 35px !important;
+  }
+} 
